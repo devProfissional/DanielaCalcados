@@ -1,0 +1,1198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-fundo-all{
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Paragrafos;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@font-face{
+    font-family: FonteTitulo;
+    src: url(../font/Inter-Black.ttf);
+}
+
+@font-face{
+    font-family: Paragrafos;
+    src: url(../font/Inter-Light.ttf);
+}
+
+@font-face{
+    font-family: Especificacoes;
+    src: url(../font/Inter-SemiBold.ttf);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #000000;
+    height: 120px;
+}
+
+.menu input{
+    width: 450px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    font-family: Paragrafos;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 30px;
+}
+
+.container{
+    width: 60%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu img{
+    width: 70px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.menu .icon{
+    width: 24px;
+    margin-left: 7px;
+}
+
+.menu{
+    height: 100%;
+}
+
+.menu ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li a{
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: FonteTitulo;
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+}
+
+.dropdown-menu{
+    position: absolute;
+    z-index: 10;
+    background-color: #1D6A96;
+    box-shadow: 0px 5px 15px 0px #000;
+    display: none;
+}
+
+.menu ul li .dropdown-menu a{
+    border-bottom: 1px solid #ffffff;
+    padding: 15px;
+    display: block;
+}
+
+.dropdown-menu a:hover{
+    background-color: #3092ca;
+    transition: .2s;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.container-books img{
+    width: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    user-select: none; /* Não permitir seleção de texto dentro das imagens (capas) */
+}
+.container-books-index img{
+    width: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    user-select: none; /* Não permitir seleção de texto dentro das imagens (capas) */
+}
+
+.container h1{
+    margin-top: 80px;
+    font-family: Paragrafos;
+    font-size: 37px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.container-books-index{
+    display: flex;
+    justify-content: center;
+    column-gap: 6%;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin-left: 70px;
+    max-width: 50%; /* Defina a largura máxima desejada */
+    /* overflow-x: auto; Adicione rolagem horizontal se necessário */
+}
+.container-books{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 6%;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-left: 70px;
+
+}
+.container-books{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 6%;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-left: 70px;
+
+}
+.carousel {
+    width: 100%; /* Defina a largura desejada para o carrossel */
+    white-space: nowrap; /* Evita que os elementos quebrem para a próxima linha */
+    }
+
+.estil-button-carousel{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-button {
+    position: relative;
+    top: 50%;
+    border-radius: 25px;
+    font-family: Paragrafos;
+    font-size: 16px;
+    background-color: #1D6A96;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+.estil-botao-vermais{
+    margin-top: 2%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: none;
+    background-color: #1D6A96;
+    color: #ffffff;
+    font-family: Especificacoes;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.estil-botao-vermais:hover{
+    background-color: #3498db;
+    transition: .1s;
+}
+
+.carousel-button:hover {
+    background: #0056b3;
+}
+
+.estil-books a{
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: FonteTitulo;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1D6A96;
+    color: #fff;
+}
+
+.estil-books a:hover{
+    background-color: #3092ca;
+    transition: .2s
+}
+.estil-books img{
+    user-select: none;
+}
+
+.estil-books{
+    background-color: #fff;
+    box-shadow: 0px 5px 15px 0px #a8acad;
+    border-radius: 10px;
+    border-bottom: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    border-left: 1px solid #bebebe;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    touch-action: pan-y; /* Habilita o deslizamento vertical */
+    user-select: none; /* Não permitir seleção de texto dentro dos cards */
+}
+
+footer{
+    height: 120px;
+    background-color: #1D6A96;
+}
+
+.container-footer{
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0px 5%;
+    column-gap: 10%;
+}
+
+.container-footer a img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.end-page{
+    height: 100%;
+    color: #fff;
+    background-color: #1b1b1b;
+}
+
+.container-desc{
+    padding: 70px 0px;
+}
+
+.estil-titulo-endpage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-desc p{
+    font-family: Paragrafos;
+    font-size: 25px;
+}
+
+.container-desc h2{
+    font-family: FonteTitulo;
+    font-size: 35px;
+}
+
+.estil-endpage{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+/* PAGINA DE ALUGUEL */
+
+.container-estil-desc{
+    background-color: #fff;
+    margin-top: 5%;
+    padding: 2%;
+    max-width: 720px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 15px 0px #a8acad;
+    border-radius: 10px;
+    border-bottom: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    border-left: 1px solid #bebebe;
+    word-break: break-word;
+}
+
+.desc-livro-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.desc-livro-content img{
+    width: 220px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.espec-estil-livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-left: 7%;
+}
+
+.espec-estil-livro a{
+    margin-top: 10%;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1D6A96;
+    font-family: FonteTitulo;
+    font-size: 30px;
+    padding: 10px 50px;
+}
+
+.espec-estil-livro a:hover{
+    background-color: #3092ca;
+    transition: .2s
+}
+
+.desc-livro-content h3{
+    margin-bottom: 10%;
+    font-family: FonteTitulo;
+    font-size: 28px;
+    text-align: center;
+}
+
+.desc-livro-content p{
+    font-family: Paragrafos;
+    font-size: 23px;
+}
+
+.container-background-desc-espec{
+    background-color: #fff;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 5%;
+    max-width: 1080px;
+    width: auto;
+    box-shadow: 0px 5px 15px 0px #a8acad;
+    border-radius: 10px;
+    border-bottom: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    border-left: 1px solid #bebebe;
+}
+
+.descricao-livro h1{
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.descricao-livro p{
+    font-family: Paragrafos;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.especificacao-livro h1{
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.container-especificacao-livro{
+    margin-bottom: 3%;
+    width: 40%;
+}
+
+.itens-especificacao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.itens-especificacao h4{
+    font-family: Especificacoes;
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.itens-especificacao p{
+    font-family: Paragrafos;
+    font-size: 20px;
+}
+
+/* TELA LOGIN */
+
+.body-login{
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+
+.container-login{
+    background-color: #fff;
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0 0 20px 0 #a9a9a9;
+}
+
+.container-login form{
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+    color: #faebd7;
+}
+
+.buttonsform {
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    color: #000000;
+    cursor: none;
+}
+
+.buttonsform h1{
+    font-family: Especificacoes;
+    font-size: 20px;
+    cursor: auto;
+    background: transparent;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+    color: #000;
+}
+
+.buttonsform .redefinir{
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+}
+
+.firstAccess{
+    font-size: 15px;
+    color: #006ce7;
+    font-family: FonteTitulo;
+}
+
+.btncolor{
+    border-radius: 25px;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: #006ce7;
+    transition: .3s;
+}
+
+.btn-1acesso{
+    border: none;
+    font-size: 20px;
+    font-family: Especificacoes;
+    background-color: transparent;
+}
+
+.container-login input[type="text"], input[type="password"]{
+    font-family: Paragrafos;
+    font-size: 17px;
+    border: solid #000000 2px;
+    margin-top: 25px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+    color: #000000;
+}
+
+.container-login input[type="password"]{
+    margin-bottom: 10px;
+}
+
+.container-login .buttoncadastro{
+    font-family: FonteTitulo;
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background: #006ce7;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 0px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.divcheck{
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+    color: #000000;
+}
+
+.container-login span{
+    font-family: Especificacoes;
+    font-size: 16px;
+    margin-left: 3%;
+}
+
+.container-login input[type="checkbox"]{
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.container-login .buttoncadastro:hover{
+    background-color: #3092ca;
+}
+
+.container-footer-login footer{
+    margin-top: 0;
+}
+
+#entrar{
+    left: 25px;
+}
+
+#cadastrar-se{
+    left: 450px;
+}
+
+.swal2-popup {
+    font-size: 20px;
+    font-family: FonteTitulo;
+}
+/* LUQINHA QUE MEXEUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU */
+
+.card-letra {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 270px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-num {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 270px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-letra h3 {
+    color: #333;
+    font-size: 20px;
+    font-family: FonteTitulo;
+}
+
+.card-num p {
+    color: #337eaa;
+    font-size: 60px;
+    font-family: Especificacoes;
+
+}
+
+.container-adm-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* TELA ADM */
+
+.body-adm{
+    background-color: #1D6A96;
+}
+
+.container-adm{
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-conteudo-adm p{
+    font-family: Especificacoes;
+}
+
+.box-conteudo-adm{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.livros-alocados-list{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 500px;
+    width: 57%;
+}
+
+.alunos-vencimento-list{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 500px;
+    width: 39%;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir i img{
+    width: 32px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.menu-lateral ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+.menu-lateral ul li.item-menu:hover{
+    background: #006ce7;
+}
+
+.menu-lateral ul li.item-menu{
+    transition: .4s;
+}
+
+.menu-lateral ul li.item-menu a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    font-family: Especificacoes;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.menu-lateral ul li.item-menu a .icone > img{
+    width: 40px;
+}
+
+.menu-lateral ul li.item-menu a .txt-link{
+    margin-left: 30px;
+}
+
+nav.menu-lateral{
+    box-shadow: 4px 0 0  #ffffff;
+    width: 80px;
+    height: 100%;
+    background-color: #fff;
+    padding: 40px 0px 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+/* TELA INSERT LIVROS ADM */
+
+.container-insert{  
+    margin-top: 70px;
+    margin-bottom: 40px;
+    min-width: 1150px;
+    width: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px #a8acad;
+    padding: 1px;
+}
+
+.container-insert h1{
+    width: max-content;
+    height: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: Especificacoes;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 8px 20px;
+
+}
+.label-adm{
+width: max-content;
+height: max-content;
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+color: #000000;
+font-family: paragrafos;
+border-radius: 10px;
+font-size: 15px;
+padding: 8px 20px;
+}
+
+.container-dados-insert{
+    display: inline-flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-bottom: 50px;
+}
+
+.type1-itens{
+    display: block;
+    width: min-content;
+}
+
+.container-dados-insert .type1-itens input{
+    width: 470px;
+}
+
+.container-dados-insert input{
+    font-family: Paragrafos;
+    font-size: 17px;
+    border: none;
+    background-color: #E9E9E9;
+    margin-top: 25px;
+    margin-left: 35px;
+    padding: 8px 0px 8px 20px;
+    outline: none;
+    max-width: 500px;
+    width: auto;
+    color: #000000;
+}
+
+.container-dados-insert .type2-itens input{
+    max-width: 250px;
+    width: 100%;
+}
+
+.container-dados-insert input::placeholder{
+    width: max-content;
+}
+
+.button-cadastrar-livro{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.button-cadastrar-livro a{
+    margin-top: 10%;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1D6A96;
+    font-family: FonteTitulo;
+    font-size: 30px;
+    padding: 10px 50px;
+}
+
+.button-cadastrar-livro a:hover{
+    background-color: #3092ca;
+    transition: .2s}
+
+.container-adm-livros .container-livros .box-conteudo-livros ul {
+    display: inline-block; 
+    margin-right: 20px; 
+    align-items: center;
+}
+
+.container-pesquisa{
+    max-width: 1000px;
+    width: auto;
+    background-color: #ffffff;
+    justify-content: space-between;
+    display: flex;
+    margin: 40px auto 0 auto;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.container-pesquisa input{
+    text-align: center;
+    font-family: Paragrafos;
+    font-size: 18px;
+    padding: 2px 0;
+}
+
+.container-pesquisa label{
+    font-family: Especificacoes;
+    font-size: 18px;
+}
+
+.btnbuscar{
+    font-size: 18px;
+    font-family: FonteTitulo;
+    background-color: #1D6A96;
+    color: #ffffff;
+    border: none;
+    padding: 7px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnbuscar:hover{
+    background-color: #3092ca;
+    transition: .2s
+}
+
+.container-adm-livros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 70px;
+}
+.container-livros{
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+ 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{
+    justify-content: center;
+}
+
+th, td {
+    font-family: Paragrafos;
+    padding: 12px;
+    text-align: center; 
+    vertical-align: middle; 
+    border-bottom: 1px solid #ddd;
+}
+
+/* TELA INSERÇÃO DE ALUNOS */
+
+.container-alunos{
+    max-width: 600px;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.conteudo-alunos{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.colocar-arquivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 3px solid #1D6A96;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.colocar-arquivo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.colocar-arquivo-container h1{
+    font-family: FonteTitulo;
+    font-size: 27px;
+    text-shadow: none;
+    padding: 15px 0px;
+}
+
+.colocar-arquivo-container label{
+    font-family: Especificacoes;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.colocar-arquivo-container label:hover{
+    color: #929191;
+    transition: .1s;
+}
+
+.colocar-arquivo-container input[type="file"]{
+    display: none;
+}
+
+.colocar-arquivo p label{
+    color: #1D6A96;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Especificacoes;
+}
+
+.colocar-arquivo-container img{
+    width: 50px;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.custom-file-upload img {
+    margin-right: 10px;
+}
+
+
+
+.botao-alunos{
+    margin-top: 15px;
+}
+
+.botao-alunos button{
+    font-family: FonteTitulo;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    background: #006ce7;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 12px 60px;
+}
+
+.botao-alunos button:hover{
+    background-color: #3092ca;
+    transition: .2s
+}
+
+.borda-verde{
+    border-color: rgb(3, 204, 37);
+}
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width: 624px){
+    header{
+        width: 100%;
+        height: 70px;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .menu img{
+        width: 50px;
+    }
+
+    .menu .icon{
+        width: 15px;
+        margin-left: 5px;
+    }
+
+    .menu ul{
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu ul li a{
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .menu input{
+        width: 150px;
+        font-size: 10px;
+    }
+
+    .menu ul li .dropdown-menu a{
+        padding: 10px;
+    }
+
+    .container-books img{
+        max-width: 95px;
+        width: auto;
+    }
+
+    .container-books{
+    width: 100%;
+    white-space: nowrap; /* Isso evita que os elementos quebrem para uma nova linha */
+    margin-left: 0%;
+    }
+    .estil-button-carousel{
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+        gap: 10px;
+    }
+    .container h1{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+
+    .estil-books a{
+        padding: 7px;
+        font-size: 15px;
+    }
+
+    footer{
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .container-footer{
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-footer a img{
+        width: 35px;
+    }
+
+    .container-desc{
+        padding: 35px 10px;
+    }
+
+    .container-desc p{
+        font-size: 10px;
+    }
+    
+    .container-desc h2{
+        font-size: 12px;
+    }
+    
+    .estil-endpage{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    /* PAGINA DE ALUGUEL */
+
+    .container-estil-desc{
+        max-width: 410px;
+        width: auto;
+    }
+
+    .desc-livro-content img{
+        width: 140px;
+    }
+
+    .espec-estil-livro a{
+        font-size: 20px;
+        padding: 8px 35px;
+    }
+
+    .desc-livro-content h3{
+        font-size: 25px;
+    }
+
+    .desc-livro-content p{
+        font-size: 18px;
+    }
+
+    .container-background-desc-espec{
+        max-width: 500px;
+        width: auto;
+        padding: 2% 3%;
+    }
+
+    .descricao-livro h1{
+        font-size: 25px;
+    }
+
+    .descricao-livro p{
+        font-size: 20px;
+    }
+
+    .especificacao-livro h1{
+        font-size: 25px;
+    }
+
+ 
+}
+
+/*tela locados*/
+
+.h1locados{
+    font-family: Paragrafos;
+    margin-left: 30px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+th{
+    border-radius: 10px;
+}
+
+#atraso{
+    color:red
+}
+
+.mensagemFixa,.saudacao{
+    font-family: Paragrafos;
+    font-size:20px;
+    display: inline-flex;
+    margin-top: 30px;
+    
+}
+
+.testeicon {
+    color: #000000;
+}
